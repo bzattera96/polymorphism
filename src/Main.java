@@ -7,6 +7,8 @@ public class Main {
     public static final void main(String[] args) { //acordarse usar el final
         Vehicle[] array = new Vehicle[12];
 
+        //vehicle[0] = new Vehicle();
+
         Vehicle vehicle1 = new Vehicle("Bugatti", "GJHDH1231", 2017);
         Vehicle vehicle2 = new Vehicle("Peugeot", "206", 2004);
         Vehicle vehicle3 = new Vehicle("Renault", "19", 2010);
