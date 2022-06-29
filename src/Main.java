@@ -4,7 +4,7 @@ import ar.com.ada.online.second.subclass.Truck;
 import ar.com.ada.online.second.superclass.Vehicle;
 
 public class Main {
-    public static final void main(String[] args) {
+    public static final void main(String[] args) { //acordarse usar el final
         Vehicle[] array = new Vehicle[12];
 
         Vehicle vehicle1 = new Vehicle("Bugatti", "GJHDH1231", 2017);
