@@ -7,7 +7,6 @@ public class Truck extends Vehicle {
     private Integer maxLoad;
 
     //constructores
-
     public Truck(String brand, String model, Integer year, Integer maxLoad) {
         super(brand, model, year);
         this.maxLoad = maxLoad;
@@ -30,8 +29,6 @@ public class Truck extends Vehicle {
     }
 
     //métodos
-
-
     @Override
     public String technicalSheet() {
         String aMostrar;
