@@ -29,7 +29,6 @@ public class ElectricalVehicle extends Vehicle {
     }
 
     //métodos
-
     @Override
     public String technicalSheet() {
         String aMostrar;

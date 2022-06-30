@@ -4,24 +4,26 @@ import ar.com.ada.online.second.subclass.Truck;
 import ar.com.ada.online.second.superclass.Vehicle;
 
 public class Main {
-    public static void main(String[] args) {
+    public static final void main(String[] args) { //acordarse usar el final
         Vehicle[] array = new Vehicle[12];
+
+        //vehicle[0] = new Vehicle();
 
         Vehicle vehicle1 = new Vehicle("Bugatti", "GJHDH1231", 2017);
         Vehicle vehicle2 = new Vehicle("Peugeot", "206", 2004);
         Vehicle vehicle3 = new Vehicle("Renault", "19", 2010);
 
-        ElectricalVehicle electricalVehicle1 = new ElectricalVehicle("Fiat", "Uno", 2006, 13123);
-        ElectricalVehicle electricalVehicle2 = new ElectricalVehicle("Renault", "Blabla", 2016, 456123);
-        ElectricalVehicle electricalVehicle3 = new ElectricalVehicle("Volkswagen", "Suran", 2005, 123789);
+        Vehicle electricalVehicle1 = new ElectricalVehicle("Fiat", "Uno", 2006, 13123);
+        Vehicle electricalVehicle2 = new ElectricalVehicle("Renault", "Blabla", 2016, 456123);
+        Vehicle electricalVehicle3 = new ElectricalVehicle("Volkswagen", "Suran", 2005, 123789);
 
-        SportsVehicle sportsVehicle1 = new SportsVehicle("Fiat", "vfndjkvnjfk", 2003, 101);
-        SportsVehicle sportsVehicle2 = new SportsVehicle("BMW", "M2", 2019, 402);
-        SportsVehicle sportsVehicle3 = new SportsVehicle("Nissan", "JT-R", 2011, 317);
+        Vehicle sportsVehicle1 = new SportsVehicle("Fiat", "vfndjkvnjfk", 2003, 101);
+        Vehicle sportsVehicle2 = new SportsVehicle("BMW", "M2", 2019, 402);
+        Vehicle sportsVehicle3 = new SportsVehicle("Nissan", "JT-R", 2011, 317);
 
-        Truck truck1 = new Truck("Jeep", "FBNJGN123", 1999, 87);
-        Truck truck2 = new Truck("Volvo", "FBN123", 2005, 123);
-        Truck truck3 = new Truck("Mitsubishi", "FB456456", 2008, 50);
+        Vehicle truck1 = new Truck("Jeep", "FBNJGN123", 1999, 87);
+        Vehicle truck2 = new Truck("Volvo", "FBN123", 2005, 123);
+        Vehicle truck3 = new Truck("Mitsubishi", "FB456456", 2008, 50);
 
         array[0] = vehicle1;
         array[1] = vehicle2;
