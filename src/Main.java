@@ -1,11 +1,12 @@
-import ar.com.ada.online.second.subclass.ElectricalVehicle;
-import ar.com.ada.online.second.subclass.SportsVehicle;
-import ar.com.ada.online.second.subclass.Truck;
+import ar.com.ada.online.second.subclass.*;
+import ar.com.ada.online.second.superclass.Animal;
+import ar.com.ada.online.second.superclass.Canine;
+import ar.com.ada.online.second.superclass.Feline;
 import ar.com.ada.online.second.superclass.Vehicle;
 
 public class Main {
     public static final void main(String[] args) { //acordarse usar el final
-        Vehicle[] array = new Vehicle[12];
+        /*Vehicle[] array = new Vehicle[12];
 
         //vehicle[0] = new Vehicle();
 
@@ -41,5 +42,33 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i].technicalSheet());
         }
+        */
+
+        Animal[] arrayDeAnimales = new Animal[14];
+        arrayDeAnimales[0] = new Animal("Elefante", 5, "Pequeño", "Dumbo", "Desierto");
+        arrayDeAnimales[1] = new Animal("Aguila", 2, "Grande", "Teresa", "Alpes");
+        arrayDeAnimales[2] = new Feline("Tigre", 3, "Grande", "Tigre", "Jungla", false);
+        arrayDeAnimales[3] = new Feline("Pantera", 1, "Mediana", "Rosa", "Jungla", false);
+        arrayDeAnimales[4] = new Canine("Chacal", 2, "Grande", "Jorge", "Bosque", true);
+        arrayDeAnimales[5] = new Canine("Coyote", 1, "Grande", "Maria", "Australia", true);
+        arrayDeAnimales[6] = new Lion("Leon", 2, "Mediano", "Carlos", "Africa", false);
+        arrayDeAnimales[7] = new Lion("Leon", 1, "Grande", "José", "Africa", false);
+        arrayDeAnimales[8] = new Cat("Gato", 2, "Mediano", "Lulú", "Casa de alguien", true);
+        arrayDeAnimales[9] = new Cat("Gato", 2, "Pequeño", "Mish", "Casa de otro", true);
+        arrayDeAnimales[10] = new Wolf("Lobo", 8, "Grande", "Manchas", "Romania", true);
+        arrayDeAnimales[11] = new Wolf("Lobo", 1, "Peque", "Ojoslindos", "Irlanda", false);
+        arrayDeAnimales[12] = new Dog("Perro", 1, "Grande", "Firulais", "Cordoba", false);
+        arrayDeAnimales[13] = new Dog("Perro", 5, "Mediano", "Firulais2", "Cordoba", true);
+
+        for(int i = 0; i < arrayDeAnimales.length; i++) {
+            arrayDeAnimales[i].eat();
+            arrayDeAnimales[i].subir();
+            arrayDeAnimales[i].emitirSonido();
+        }
+
+
+
+
+
     }
 }
