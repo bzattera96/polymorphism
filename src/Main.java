@@ -64,12 +64,12 @@ public class Main {
         }
         */
 
-        Rectangulo rectangulo1 = new Rectangulo("Rectangulo", 3, 2);
-        Rectangulo rectangulo2 = new Rectangulo("Rectangulo", 3, 2);
-        Rectangulo rectangulo3 = new Rectangulo("Rectangulo", 3, 3);
+        Rectangulo rectangulo1 = new Rectangulo(3, 2);
+        Rectangulo rectangulo2 = new Rectangulo(3, 2);
+        Rectangulo rectangulo3 = new Rectangulo(3, 3);
 
-        Triangulo triangulo = new Triangulo("Triangulo", 4, 4, 4, 8);
-        Circulo circulo = new Circulo("Circulo", 2);
+        Triangulo triangulo = new Triangulo(4, 4, 4, 8);
+        Circulo circulo = new Circulo(2);
 
         System.out.println(triangulo.toString());
         System.out.println(circulo.toString());

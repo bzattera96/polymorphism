@@ -8,10 +8,10 @@ public class Rectangulo extends FiguraGeometrica {
     private double ladoA;
     private double ladoB;
 
-    public Rectangulo(String nombre, double ladoA, double ladoB) {
-        super(nombre);
+    public Rectangulo(double ladoA, double ladoB) {
         this.ladoA = ladoA;
         this.ladoB = ladoB;
+        this.nombre = "Rectangulo";
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Rectangulo extends FiguraGeometrica {
 
     @Override
     public String toString() {
-        return "Rectangulo: el lado " + ladoA + " multiplicado por el lado " + ladoB + " da un area de: " + calcularArea() + ". Es isometrico? " + esIsometrica() + ".";
+        return nombre + ": el lado " + ladoA + " multiplicado por el lado " + ladoB + " da un area de: " + calcularArea() + ". Es isometrico? " + esIsometrica() + ".";
     }
 
     @Override

@@ -8,8 +8,8 @@ public class Circulo extends FiguraGeometrica {
     private double radio;
     private final double PIGRIEGO = 3.14159265;
 
-    public Circulo(String nombre, double radio) {
-        super(nombre);
+    public Circulo(double radio) {
+        this.nombre = "Círculo";
         this.radio = radio;
     }
 
@@ -20,7 +20,7 @@ public class Circulo extends FiguraGeometrica {
 
     @Override
     public String toString() {
-        return "Circulo: el cuadrado del radio de " + radio + " multiplicado por " + PIGRIEGO + " da un area de: " + calcularArea() + ". Es isometrico? " + esIsometrica() + ".";
+        return nombre + ": el cuadrado del radio de " + radio + " multiplicado por " + PIGRIEGO + " da un area de: " + calcularArea() + ". Es isometrico? " + esIsometrica() + ".";
     }
 
     @Override
