@@ -1,12 +1,10 @@
 import ar.com.ada.online.second.subclass.*;
-import ar.com.ada.online.second.superclass.Animal;
-import ar.com.ada.online.second.superclass.Canine;
-import ar.com.ada.online.second.superclass.Feline;
-import ar.com.ada.online.second.superclass.Vehicle;
+import ar.com.ada.online.second.superclass.*;
 
 public class Main {
     public static final void main(String[] args) { //acordarse usar el final
-        /*Vehicle[] array = new Vehicle[12];
+        /*
+        Vehicle[] array = new Vehicle[12];
 
         //vehicle[0] = new Vehicle();
 
@@ -42,7 +40,6 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i].technicalSheet());
         }
-        */
 
         Animal[] arrayDeAnimales = new Animal[14];
         arrayDeAnimales[0] = new Animal("Elefante", 5, "Pequeño", "Dumbo", "Desierto");
@@ -65,9 +62,20 @@ public class Main {
             arrayDeAnimales[i].subir();
             arrayDeAnimales[i].emitirSonido();
         }
+        */
 
+        Rectangulo rectangulo1 = new Rectangulo(3, 2);
+        Rectangulo rectangulo2 = new Rectangulo(3, 2);
+        Rectangulo rectangulo3 = new Rectangulo(3, 3);
 
+        Triangulo triangulo = new Triangulo(4, 4, 4, 8);
+        Circulo circulo = new Circulo(2);
 
+        System.out.println(triangulo.toString());
+        System.out.println(circulo.toString());
+
+        System.out.println(rectangulo1.equals(rectangulo2));
+        System.out.println(rectangulo1.equals(rectangulo3));
 
 
     }
