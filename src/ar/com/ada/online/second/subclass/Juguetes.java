@@ -5,9 +5,8 @@ import ar.com.ada.online.second.superclass.Producto;
 public class Juguetes extends Producto {
     private final double DESCUENTO = 0.25;
 
-    public Juguetes(int cantidad, String nombre, double precioDeLista) {
+    public Juguetes(String nombre, double precioDeLista) {
         this.categoria = "Juguetes";
-        this.cantidad = cantidad;
         this.nombre = nombre;
         this.precioDeLista = precioDeLista;
     }
@@ -15,17 +14,15 @@ public class Juguetes extends Producto {
     @Override
     public double obtenerPrecioFinal() {
         double precio = precioDeLista;
-        if (cantidad > 3) {
-            precio = precioDeLista - (precioDeLista * DESCUENTO);
-        } else if (precioDeLista > 3000) {
+        if (precioDeLista > 3000) {
             precio = precioDeLista - (precioDeLista * DESCUENTO);
         }
         return precio;
     }
 
     @Override
-    public int getCantidad() {
-        return cantidad;
+    public String getCategoria() {
+        return categoria;
     }
 
     @Override
