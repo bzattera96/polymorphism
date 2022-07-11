@@ -8,12 +8,11 @@ public class Alimentos extends Producto {
     private final double DESCUENTO = 0.1;
     private String diaDeSemana;
 
-    public Alimentos(String nombre, double precioDeLista, String diaDeSemana, int cantidad) {
+    public Alimentos(String nombre, double precioDeLista, String diaDeSemana) {
         this.categoria = "Alimentos";
         this.nombre = nombre;
         this.precioDeLista = precioDeLista;
         this.diaDeSemana = diaDeSemana;
-        this.cantidad = cantidad;
     }
 
     @Override
@@ -26,8 +25,8 @@ public class Alimentos extends Producto {
     }
 
     @Override
-    public int getCantidad() {
-        return cantidad;
+    public String getCategoria() {
+        return categoria;
     }
 
     @Override
