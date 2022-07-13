@@ -1,5 +1,8 @@
 import ar.com.ada.online.second.Factura;
+import ar.com.ada.online.second.interfaces.Communication;
+import ar.com.ada.online.second.interfaces.LivingBeing;
 import ar.com.ada.online.second.subclass.*;
+import ar.com.ada.online.second.subclass.Animal;
 import ar.com.ada.online.second.superclass.*;
 
 import java.util.ArrayList;
@@ -97,8 +100,6 @@ public class Main {
             System.out.println("Precio final: $" + articulos.get(i).ObtenerPrecio() + ".");
             System.out.println(" ");
         }
-        */
-
 
         Alimentos arroz = new Alimentos("Arroz", 100, "Martes");
         Alimentos aceite = new Alimentos("Aceite", 600, "Viernes");
@@ -134,5 +135,26 @@ public class Main {
         facturaABCABC.mostrarProductos();
         facturaABCABC.mostrarTotalDescontado();
         facturaABCABC.mostrarTotalNoDescontado();
+
+        List<LivingBeing> livingBeingList = new ArrayList<>();
+        livingBeingList.add(new Persona());
+        livingBeingList.add(new Animal());
+
+        for (int i = 0; i < livingBeingList.size(); i++) {
+            livingBeingList.get(i).eat("Bread");
+            livingBeingList.get(i).sleep();
+            livingBeingList.get(i).communicate();
+        }
+        */
+
+        List<Communication> communicationList = new ArrayList<>();
+        communicationList.add(new Canvas("fabric", 25));
+        communicationList.add(new DrawingPad("strong", "Wacom"));
+        communicationList.add(new Paper(true, "A4"));
+
+        for (int i = 0; i < communicationList.size(); i++) {
+            communicationList.get(i).communicate();
+            communicationList.get(i).express();
+        }
     }
 }

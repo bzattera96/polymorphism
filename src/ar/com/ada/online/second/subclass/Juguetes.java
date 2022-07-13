@@ -19,19 +19,4 @@ public class Juguetes extends Producto {
         }
         return precio;
     }
-
-    @Override
-    public String getCategoria() {
-        return categoria;
-    }
-
-    @Override
-    public String getNombre() {
-        return nombre;
-    }
-
-    @Override
-    public double getPrecioDeLista() {
-        return precioDeLista;
-    }
 }
