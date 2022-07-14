@@ -1,10 +1,13 @@
 import ar.com.ada.online.second.Factura;
 import ar.com.ada.online.second.interfaces.Communication;
+import ar.com.ada.online.second.interfaces.Comprable;
 import ar.com.ada.online.second.interfaces.LivingBeing;
 import ar.com.ada.online.second.subclass.*;
 import ar.com.ada.online.second.subclass.Animal;
 import ar.com.ada.online.second.superclass.*;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -145,7 +148,6 @@ public class Main {
             livingBeingList.get(i).sleep();
             livingBeingList.get(i).communicate();
         }
-        */
 
         List<Communication> communicationList = new ArrayList<>();
         communicationList.add(new Canvas("fabric", 25));
@@ -155,6 +157,22 @@ public class Main {
         for (int i = 0; i < communicationList.size(); i++) {
             communicationList.get(i).communicate();
             communicationList.get(i).express();
+        }
+        */
+
+
+        List<Comprable> comprableList = new ArrayList<>();
+        comprableList.add(new Rodado(4, 180, "negro", 4000000));
+        comprableList.add(new CarritoBebé(3, 10, "verde agua", 45000, false, 7.5, false, true));
+        comprableList.add(new Bicicleta(2, 65, "rosa", 56000, 5, false));
+        comprableList.add(new Alimento("brocoli", new Date(122, 00, 18), 200));
+        comprableList.add(new ProductoBelleza("esmalte", "Maybelline", 320));
+
+        for (int i = 0; i < comprableList.size(); i++) {
+            System.out.println(comprableList.get(i).obtenerCaracteristicas());
+            comprableList.get(i).definirCosto();
+            comprableList.get(i).calcularPrecioFinal();
+            comprableList.get(i).comprar();
         }
     }
 }
